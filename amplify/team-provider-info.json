@@ -10,5 +10,17 @@
             "StackName": "amplify-react-only-staging-174841",
             "StackId": "arn:aws:cloudformation:ap-northeast-1:569156676168:stack/amplify-react-only-staging-174841/e849d760-fa28-11e9-b3d7-06fcc76a2472"
         }
+    },
+    "production": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-react-only-production-185209-authRole",
+            "UnauthRoleArn": "arn:aws:iam::569156676168:role/amplify-react-only-production-185209-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::569156676168:role/amplify-react-only-production-185209-authRole",
+            "Region": "ap-northeast-1",
+            "DeploymentBucketName": "amplify-react-only-production-185209-deployment",
+            "UnauthRoleName": "amplify-react-only-production-185209-unauthRole",
+            "StackName": "amplify-react-only-production-185209",
+            "StackId": "arn:aws:cloudformation:ap-northeast-1:569156676168:stack/amplify-react-only-production-185209/c653c130-fa31-11e9-b250-0e08659c816c"
+        }
     }
 }
