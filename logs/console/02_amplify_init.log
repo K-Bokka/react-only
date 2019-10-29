@@ -1,0 +1,48 @@
+TMPC-015:react-only a-yamamoto$ amplify init
+Note: It is recommended to run this command from the root of your app directory
+? Enter a name for the project react-only
+? Enter a name for the environment staging
+? Choose your default editor: IntelliJ IDEA
+? Choose the type of app that you're building javascript
+Please tell us about your project
+? What javascript framework are you using react
+? Source Directory Path:  src
+? Distribution Directory Path: build
+? Build Command:  npm run-script build
+? Start Command: npm run-script start
+Using default provider  awscloudformation
+
+For more information on AWS Profiles, see:
+https://docs.aws.amazon.com/cli/latest/userguide/cli-multiple-profiles.html
+
+? Do you want to use an AWS profile? Yes
+? Please choose the profile you want to use k-bokka-amplify
+⠦ Initializing project in the cloud...
+
+CREATE_IN_PROGRESS amplify-react-only-staging-174841 AWS::CloudFormation::Stack Tue Oct 29 2019 17:48:41 GMT+0900 (GMT+09:00) User Initiated
+CREATE_IN_PROGRESS DeploymentBucket                  AWS::S3::Bucket            Tue Oct 29 2019 17:48:44 GMT+0900 (GMT+09:00)
+CREATE_IN_PROGRESS UnauthRole                        AWS::IAM::Role             Tue Oct 29 2019 17:48:44 GMT+0900 (GMT+09:00)
+CREATE_IN_PROGRESS AuthRole                          AWS::IAM::Role             Tue Oct 29 2019 17:48:44 GMT+0900 (GMT+09:00)
+CREATE_IN_PROGRESS UnauthRole                        AWS::IAM::Role             Tue Oct 29 2019 17:48:45 GMT+0900 (GMT+09:00) Resource creation Initiated
+CREATE_IN_PROGRESS AuthRole                          AWS::IAM::Role             Tue Oct 29 2019 17:48:45 GMT+0900 (GMT+09:00) Resource creation Initiated
+CREATE_IN_PROGRESS DeploymentBucket                  AWS::S3::Bucket            Tue Oct 29 2019 17:48:46 GMT+0900 (GMT+09:00) Resource creation Initiated
+⠇ Initializing project in the cloud...
+
+CREATE_COMPLETE DeploymentBucket                  AWS::S3::Bucket            Tue Oct 29 2019 17:49:06 GMT+0900 (GMT+09:00)
+CREATE_COMPLETE UnauthRole                        AWS::IAM::Role             Tue Oct 29 2019 17:49:07 GMT+0900 (GMT+09:00)
+CREATE_COMPLETE AuthRole                          AWS::IAM::Role             Tue Oct 29 2019 17:49:07 GMT+0900 (GMT+09:00)
+CREATE_COMPLETE amplify-react-only-staging-174841 AWS::CloudFormation::Stack Tue Oct 29 2019 17:49:10 GMT+0900 (GMT+09:00)
+✔ Successfully created initial AWS cloud resources for deployments.
+✔ Initialized provider successfully.
+Initialized your environment successfully.
+
+Your project has been successfully initialized and connected to the cloud!
+
+Some next steps:
+"amplify status" will show you what you've added already and if it's locally configured or deployed
+"amplify <category> add" will allow you to add features like user login or a backend API
+"amplify push" will build all your local backend resources and provision it in the cloud
+"amplify publish" will build all your local backend and frontend resources (if you have hosting category added) and provision it in the cloud
+
+Pro tip:
+Try "amplify add api" to create a backend API and then "amplify publish" to deploy everything
