@@ -1,0 +1,11 @@
+TMPC-015:react-only a-yamamoto$ amplify add codegen --apiId wimae6r7gbfffmrz4nftnnxtzq
+✔ Getting API details
+Successfully added API amplifytest-staging to your Amplify project
+? Choose the code generation language target typescript
+? Enter the file name pattern of graphql queries, mutations and subscriptions src/graphql/**/*.ts
+? Do you want to generate/update all possible GraphQL operations - queries, mutations and subscriptions Yes
+? Enter maximum statement depth [increase from default if your schema is deeply nested] 2
+? Enter the file name for the generated code src/API.ts
+? Do you want to generate code for your newly created GraphQL API No
+✔ Downloaded the schema
+✔ Generated GraphQL operations successfully and saved at src/graphql
