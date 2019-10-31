@@ -1,0 +1,28 @@
+#!/bin/bash
+set -e
+IFS='|'
+
+AWSCLOUDFORMATIONCONFIG=" \
+{ \
+  \"awscloudformation\": { \
+    \"AuthRoleName\": \"amplify-amplify-only-staging-141723-authRole\", \
+    \"UnauthRoleArn\": \"arn:aws:iam::569156676168:role/amplify-amplify-only-staging-141723-unauthRole\", \
+    \"AuthRoleArn\": \"arn:aws:iam::569156676168:role/amplify-amplify-only-staging-141723-authRole\", \
+    \"Region\": \"ap-northeast-1\", \
+    \"DeploymentBucketName\": \"amplify-amplify-only-staging-141723-deployment\", \
+    \"UnauthRoleName\": \"amplify-amplify-only-staging-141723-unauthRole\", \
+    \"StackName\": \"amplify-amplify-only-staging-141723\", \
+    \"StackId\": \"arn:aws:cloudformation:ap-northeast-1:569156676168:stack/amplify-amplify-only-staging-141723/63ed6f80-fa0b-11e9-b760-0e819627e6da\" \
+  } \
+}"
+
+AWS_CONFIG=" \
+{ \
+  \"configLevel\": \"project\", \
+  \"useProfile\": false, \
+  \"accessKeyId\": \"$AWS_ACCESS_KEY_ID\", \
+  \"secretAccessKey\": \"$AWS_SECRET_ACCESS_KEY\", \
+  \"region\": \"$AWS_DEFAULT_REGION\" \
+}"
+
+amplify env import --name staging --config "$AWSCLOUDFORMATIONCONFIG" --awsInfo "$AWS_CONFIG" --yes
